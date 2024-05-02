@@ -4,10 +4,10 @@ import morgan from 'morgan';
 import { nanoid } from 'nanoid';
 
 import { tasks } from './dataTasks.js';
-import { blogs_xx } from './dataBlogs_xx.js';
+import { blogs_74 } from './dataBlogs_74.js';
 
 let taskList = tasks;
-let blogList_xx = blogs_xx;
+let blogList_74 = blogs_74;
 
 const app = express();
 
@@ -21,21 +21,24 @@ app.get('/', (req, res) => {
 
 /*
 ********************
- API for blogs
+API for blogs
 ********************
  */
 
-app.get('/api/blogs', (req, res) => {});
+app.get('/api/blogs', (req, res) => {
+  res.json({ blogList_74});
+});
 
 app.post('/api/blogs', (req, res) => {});
 
 app.patch('/api/blogs/:id', (req, res) => {});
 
-app.delete('/api/blogs/:id', (req, res) => {});
+app.delete('/api/blogs/:id', (req, res) => {
+});
 
 /*
 ********************
- API for tasks
+API for tasks
 ********************
  */
 
