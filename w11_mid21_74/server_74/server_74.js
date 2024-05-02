@@ -29,9 +29,20 @@ app.get('/api/blogs', (req, res) => {
   res.json({ blogList_74});
 });
 
-app.post('/api/blogs', (req, res) => {});
+app.post('/api/blogs/loadAll', (req, res) => {
+  blogList_74 = blogs_74;
+  console.log('blogList_74',JSON.stringify(blogList_74));
+  res.json({ msg:'load all blogs' });
+});
 
 app.patch('/api/blogs/:id', (req, res) => {});
+
+app.delete('/api/blogs/clearAll', (req, res) => {
+  blogList_74 = [];
+  console.log('blogList_74', JSON.stringify(blogList_74));
+  res.json({ msg:'clear all blogs'});
+});
+
 
 app.delete('/api/blogs/:id', (req, res) => {
   const { id } = req.params;
