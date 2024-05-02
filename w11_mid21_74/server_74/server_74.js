@@ -34,6 +34,10 @@ app.post('/api/blogs', (req, res) => {});
 app.patch('/api/blogs/:id', (req, res) => {});
 
 app.delete('/api/blogs/:id', (req, res) => {
+  const { id } = req.params;
+  blogList_74 = blogList_74.filter((item) => item.id !== id);
+  console.log('blogList_74', blogList_74);
+  res.json({ msg:'blog removed'});
 });
 
 /*
