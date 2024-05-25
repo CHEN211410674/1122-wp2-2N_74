@@ -78,10 +78,10 @@ const App_74 = () => {
         containerStyle={{ margin: '8px' }}
         toastOptions={{
           success: {
-            duration: 2000,
+            duration: 3000,
           },
           error: {
-            duration: 3000,
+            duration: 4000,
           },
           styles: {
             fontSize: '16px',
