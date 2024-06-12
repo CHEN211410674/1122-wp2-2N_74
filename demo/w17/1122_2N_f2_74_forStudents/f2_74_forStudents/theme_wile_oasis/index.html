@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page of The Wild Oasis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div
+        class="antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative"
+      >
+        <header class="bg-slate-100 border-b border-primary-900 px-8 py-5">
+          <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <a class="flex items-center gap-4 z-10" href="./index.html"
+              ><img
+                alt="The Wild Oasis logo"
+                width="60"
+                height="60"
+                class="text-transparent"
+                src="./image/logo.webp"
+              /><span class="text-xl font-semibold text-slate-600"
+                >The Wild Oasis</span
+              ></a
+            >
+            <nav class="z-10 text-xl">
+              <ul class="flex gap-16 items-center">
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-accent-400 transition-colors"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-accent-400 transition-colors"
+                    href="./cabins.html"
+                    >Cabins</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-accent-400 transition-colors"
+                    href="./about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-accent-400 transition-colors"
+                    href="./contact.html"
+                    >Contact us</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a class="hover:text-accent-400 transition-colors" href="#"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="flex-1 grid">
+          <main class="w-full h-screen">
+            <main>
+              <img
+                alt="Mountains and forests with two cabins"
+                class="absolute object-cover h-full w-full text-transparent"
+                src="./image/bg.webp"
+              />
+              <div class="relative pt-40 z-10 text-center">
+                <h1
+                  class="text-8xl text-slate-100 mb-10 tracking-tight font-normal"
+                >
+                  Welcome to paradise.
+                </h1>
+                <a
+                  class="bg-amber-300 px-8 py-6 text-primary-800 text-lg font-semibold hover:bg-amber-500 transition-all"
+                  href="./cabins.html"
+                  >Explore luxury cabins</a
+                >
+              </div>
+            </main>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="wild-oasis">
+      <div
+        class="antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative"
+      >
+        <header class="bg-slate-100 border-b border-primary-900 px-8 py-5">
+          <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <a class="flex items-center gap-4 z-10" href="./index.html"
+              ><img
+                alt="The Wild Oasis logo"
+                width="60"
+                height="60"
+                style="color: transparent"
+                src="./image/logo.webp"
+              /><span class="text-xl font-semibold text-slate-500"
+                >The Wild Oasis</span
+              ></a
+            >
+            <nav class="z-10 text-xl">
+              <ul class="flex gap-16 items-center">
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-accent-400 transition-colors"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-slate-800 transition-colors"
+                    href="./cabins.html"
+                    >Cabins</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-slate-800 transition-colors"
+                    href="./about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a
+                    class="hover:text-slate-800 transition-colors"
+                    href="./contact.html"
+                    >Contact us</a
+                  >
+                </li>
+                <li class="text-slate-500">
+                  <a class="hover:text-accent-400 transition-colors" href="#"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="flex-1 px-8 py-12 grid">
+          <main class="max-w-7xl mx-auto w-full">
+            <div>
+              <h1 class="text-4xl mb-8 text-accent-400 font-medium">
+                Any question? Shoot us a message
+              </h1>
+              <form
+                class="bg-slate-600 py-10 px-14 text-lg space-y-6 max-w-5xl mx-auto"
+              >
+                <div class="space-y-2">
+                  <label class="text-slate-50">Full name</label
+                  ><input
+                    required=""
+                    class="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
+                    name="fullName"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-slate-50">Email address</label
+                  ><input
+                    type="email"
+                    name="email"
+                    required=""
+                    class="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-slate-50">Subject</label
+                  ><select
+                    required=""
+                    name="subject"
+                    class="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
+                  >
+                    <option value="">Select subject...</option>
+                    <option value="booking-enquiry">Booking enquiry</option>
+                    <option value="cabin-information">Cabin information</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label class="text-slate-50">Message</label
+                  ><textarea
+                    name="message"
+                    class="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
+                    rows="3"
+                    required=""
+                  ></textarea>
+                </div>
+                <div class="flex justify-between items-center text-red-500">
+                  <p></p>
+                  <button
+                    class="bg-amber-300 px-8 py-4 text-primary-800 font-semibold hover:bg-amber-500"
+                  >
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
